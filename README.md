@@ -1,12 +1,14 @@
 # HPGPN
 
-HPGPN is an experimental project built on top of **[un-xPass](https://github.com/ML-KULeuven/un-xPass)** for football pass receiver selection. We gratefully acknowledge and thank the un-xPass project for providing the foundation and inspiration for this work.
+**Hierarchical Possession-aware Graph Pointer Network (HPGPN)** is an experimental model for football pass receiver selection. It represents each pass situation as a graph, combines player-level spatial relations with local event context, possession-history context, and uses a pointer-style prediction head to rank candidate receivers.
+
+This project is built on top of **[un-xPass](https://github.com/ML-KULeuven/un-xPass)**. We gratefully acknowledge and thank the un-xPass project for providing the foundation and inspiration for this work.
 
 The main experiment is implemented in:
 
 [`pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb`](pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb)
 
-This notebook trains and evaluates a Hierarchical Possession-aware Graph Pointer Network (HPGPN) for pass receiver selection on Euro 2024 data.
+This notebook trains and evaluates HPGPN on Euro 2024 data.
 
 ## Project Structure
 
