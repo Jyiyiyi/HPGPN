@@ -8,12 +8,16 @@ The main experiment is implemented in:
 
 [`pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb`](pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb)
 
-This notebook trains and evaluates HPGPN on Euro 2024 data.
+This notebook trains and evaluates HPGPN on Euro 2024 data. The current code and example configuration use Euro 2024 as the running example.
 
 ## Project Structure
 
 ```text
 HPGPN/
++-- config/
+|   +-- dataset/euro2024/
+|       +-- train.yaml
+|       +-- test.yaml
 +-- hpgpn/
 |   +-- config.py
 |   +-- datasets.py
@@ -23,9 +27,11 @@ HPGPN/
 |       +-- base.py
 |       +-- utils.py
 +-- stores/
-|   +-- datasets/euro2024/
+|   +-- datasets/euro2024/train/
+|   +-- datasets/euro2024/test/
 |   +-- model/
 +-- pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb
++-- README.md
 ```
 
 ## Environment
