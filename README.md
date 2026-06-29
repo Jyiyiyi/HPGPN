@@ -1,6 +1,6 @@
 # HPGPN
 
-HPGPN is an experimental project built on top of **un-xPass** for football pass receiver selection. We gratefully acknowledge and thank the un-xPass project for providing the foundation and inspiration for this work.
+HPGPN is an experimental project built on top of **[un-xPass](https://github.com/ML-KULeuven/un-xPass)** for football pass receiver selection. We gratefully acknowledge and thank the un-xPass project for providing the foundation and inspiration for this work.
 
 The main experiment is implemented in:
 
@@ -50,6 +50,8 @@ The included checkpoint is:
 gnn75_ctx_pass_hist_euro2024_h40_best_ep013_val0.6020_test0.6001.pt
 ```
 
+The data and model artifacts are included for this experiment only. Their use may be subject to the original data provider's terms.
+
 ## Running
 
 Open and run the notebook cells in order:
@@ -59,3 +61,13 @@ jupyter notebook pass_selection_gnn75_contextualized_pass_history_hierarchical_a
 ```
 
 If the notebook cannot find `../stores/...`, check the current working directory of the Jupyter kernel. The paths may need to be changed to `stores/...` when running from the repository root.
+
+## Acknowledgements and License
+
+This project is based on and adapts code from **un-xPass**, which is distributed under the Apache License 2.0.
+
+If you use this project or the original un-xPass framework in research, please cite:
+
+> Pieter Robberechts, Maaike Van Roy, and Jesse Davis. *un-xPass: Measuring Soccer Player's Creativity*. Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2023.
+
+For public distribution, please keep the original un-xPass attribution and license notice.
