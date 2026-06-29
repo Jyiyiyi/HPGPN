@@ -34,6 +34,8 @@ This project uses the same environment as **un-xPass**. Please set up and run th
 
 ## Data and Model
 
+The original event and 360 data comes from **[statsbomb/open-data](https://github.com/statsbomb/open-data)**.
+
 Preprocessed Euro 2024 train/test data is stored under:
 
 ```text
