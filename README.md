@@ -6,7 +6,7 @@ The main experiment is implemented in:
 
 [`pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb`](pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb)
 
-This notebook trains and evaluates a GraphSAGE-based pass selection model with event context and contextualized pass-history attention on Euro 2024 data.
+This notebook trains and evaluates a Hierarchical Possession-aware Graph Pointer Network (HPGPN) for pass receiver selection on Euro 2024 data.
 
 ## Project Structure
 
@@ -64,10 +64,6 @@ If the notebook cannot find `../stores/...`, check the current working directory
 
 ## Acknowledgements and License
 
-This project is based on and adapts code from **un-xPass**, which is distributed under the Apache License 2.0.
+This project builds on and adapts code from [un-xPass](https://github.com/ML-KULeuven/un-xPass), which is distributed under the Apache License 2.0.
 
-If you use this project or the original un-xPass framework in research, please cite:
-
-> Pieter Robberechts, Maaike Van Roy, and Jesse Davis. *un-xPass: Measuring Soccer Player's Creativity*. Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2023.
-
-For public distribution, please keep the original un-xPass attribution and license notice.
+The original un-xPass attribution and license notice should be preserved when redistributing this code.
