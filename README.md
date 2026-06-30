@@ -1,12 +1,12 @@
 # HPGPN
 
-**Hierarchical Possession-aware Graph Pointer Network (HPGPN)** is an experimental model for football pass receiver selection. It represents each pass situation as a graph, combines player-level spatial relations with local event context, possession-history context, and uses a pointer-style prediction head to rank candidate receivers.
+**Hierarchical Possession-aware Graph Pointer Network (HPGPN)** is a graph-based model for football pass receiver selection. It represents each pass situation as a graph, combines player-level spatial relations with local event context and possession-history context, and uses a pointer-style prediction head to rank candidate receivers.
 
-This project is built on top of **[un-xPass](https://github.com/ML-KULeuven/un-xPass)**. We gratefully acknowledge and thank the un-xPass project for providing the foundation and inspiration for this work.
+This repository contains the code accompanying our paper on football pass receiver selection with HPGPN. The implementation is built on top of **[un-xPass](https://github.com/ML-KULeuven/un-xPass)**. We gratefully acknowledge and thank the un-xPass project for providing the foundation and inspiration for this work.
 
 The main experiment is implemented in:
 
-[`pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb`](pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb)
+[`pass_selection_HPGPN_graphsage_euro2024_K40.run.ipynb`](pass_selection_HPGPN_graphsage_euro2024_K40.run.ipynb)
 
 This notebook trains and evaluates HPGPN on Euro 2024 data. The current code and example configuration use Euro 2024 as the running example.
 
@@ -30,7 +30,7 @@ HPGPN/
 |   +-- datasets/euro2024/train/
 |   +-- datasets/euro2024/test/
 |   +-- model/
-+-- pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb
++-- pass_selection_HPGPN_graphsage_euro2024_K40.run.ipynb
 +-- README.md
 ```
 
@@ -67,7 +67,7 @@ The data and model artifacts are included for this experiment only. Their use ma
 Open and run the notebook cells in order:
 
 ```bash
-jupyter notebook pass_selection_gnn75_contextualized_pass_history_hierarchical_attention_graphsage_euro2024_history40.run.ipynb
+jupyter notebook pass_selection_HPGPN_graphsage_euro2024_K40.run.ipynb
 ```
 
 If the notebook cannot find `../stores/...`, check the current working directory of the Jupyter kernel. The paths may need to be changed to `stores/...` when running from the repository root.
