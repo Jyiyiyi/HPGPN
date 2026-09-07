@@ -1,5 +1,9 @@
 # HPGPN
 
+Official implementation of “Hierarchical Possession-Aware Graph Pointer Network for Pass Receiver Selection”.
+
+This paper has been accepted by the 27th International Conference on Web Information Systems Engineering (**WISE 2026**)
+
 **Hierarchical Possession-aware Graph Pointer Network (HPGPN)** is a graph-based model for football pass receiver selection. It represents each pass situation as a graph, combines player-level spatial relations with local event context and possession-history context, and uses a pointer-style prediction head to rank candidate receivers.
 
 This repository contains the code accompanying our paper on football pass receiver selection with HPGPN. The implementation is built on top of **[un-xPass](https://github.com/ML-KULeuven/un-xPass)**. We gratefully acknowledge and thank the un-xPass project for providing the foundation and inspiration for this work.
@@ -71,6 +75,22 @@ jupyter notebook pass_selection_HPGPN_graphsage_euro2024_K40.run.ipynb
 ```
 
 If the notebook cannot find `../stores/...`, check the current working directory of the Jupyter kernel. The paths may need to be changed to `stores/...` when running from the repository root.
+
+## Citation
+
+If you find this repository useful for your research, please cite our paper:
+
+```bibtex
+@misc{wang2026hierarchicalpossessionawaregraphpointer,
+      title={Hierarchical Possession-Aware Graph Pointer Network for Pass Receiver Selection}, 
+      author={Jingyi Wang and Da Li and Kaixin Wang and Zhangqin Huang},
+      year={2026},
+      eprint={2609.04803},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2609.04803}, 
+}
+```
 
 ## Acknowledgements and License
 
